@@ -1,6 +1,6 @@
-ARG ALPINE_VERSION=3.9
+ARG ALPINE_VERSION=arm32v6/alpine
 
-FROM alpine:${ALPINE_VERSION}
+FROM ${ALPINE_VERSION}
 ARG BUILD_DATE
 ARG VCS_REF
 LABEL org.label-schema.schema-version="1.0.0-rc1" \
